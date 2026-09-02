@@ -376,6 +376,7 @@ tastoIndietro.addEventListener("click", () => {
 tastoInvio.addEventListener("click", ()=> {
     if (confirm("Vuoi procedere?")) { //funzione nativa del browser (ok annulla)
         calcolaRisultato();
-}
+    }
 
-})
+});
+mostraDomandaSulloSchermo();
