@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.quiz-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 30px rgba(160, 175, 195, 0.25);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #1a202c;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin-bottom: 2rem;
+}
+
+#question-box {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    min-height: 70px;
+}
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column; /* Dispone i bottoni uno sotto l'altro, perfetto per il pollice */
+    gap: 1rem; /* Spazio uniforme tra i bottoni */
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.btn-risposta {
+    background-color: #f7fafc;
+    border: 2px solid #edf2f7;
+    border-radius: 16px;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #4a5568;
+    text-align: left; /* Allinea il testo a sinistra per leggere meglio le risposte lunghe */
+    cursor: pointer;
+    transition: all 0.2s ease; /* Effetto transizione morbido */
+}
+
+/* Effetto quando passi il mouse (PC) o quando tocchi col dito (Telefono) Servono a cambiare la grafica nel momento esatto in cui succede qualcosa. */
+.btn-risposta:hover {
+    background-color: #edf2f7;
+    border-color: #cbd5e0;
+    color: #1a202c;
+    transform: translateY(-2px); /* Il bottone si solleva leggermente */
+}
+
+.btn-risposta:active {
+    transform: translateY(0); /* Ritorna giù quando schiacci */
+}
+
+#back-btn, #btn-invio {
+    background-color: transparent; /*azzera il default tipico*/
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;/*manian nel computer*/
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    transition: all 0.2s ease;/*rendere meno scattoso*/
+    margin: 0 0.5rem;
+}
+
+#back-btn {
+    color: #718096;
+}
+#back-btn:hover {
+    background-color: #f7fafc;
+    color: #4a5568;
+}
+
+#btn-invio {
+    background-color: #3182ce; /* Blu moderno per l'azione principale */
+    color: #ffffff;
+}
+#btn-invio:hover {
+    background-color: #2b6cb0;
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+}
+
+/* Classe speciale gestita da JavaScript per nascondere i tasti */
+.btn-nascondi {
+    display: none ;/* Questa riga rende l'elemento invisibile e lo cancella dallo schermo */
+}
+
+.disclaimer-finale {
+    font-size: 0.85rem; /* Un po' più piccolino del testo normale */
+    color: #a0aec0; /* Grigio chiaro molto discreto */
+    font-style: italic; /* Forza il testo in corsivo */
+    /*text-transform: uppercase; Trasforma AUTOMATICAMENTE tutto il testo in MAIUSCOLO */
+    letter-spacing: 0.5px; /* Spazia leggermente le lettere per renderlo più elegante */
+    margin: 0.5rem 0; /* Un pizzico di spazio sopra e sotto */
+    font-weight: 500;
+}
+
+.risultato-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.risultato-box h2 {
+    font-size: 1.4rem;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.img-risultato {
+    width: 100%;
+    max-width: 250px; /* Dimensione perfetta sia per lo schermo del PC che del telefono */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;/*adatta l'immagine come copertina*/
+}
+
+.risultato-box p {
+    font-size: 1.05rem;
+    color: #718096;
+    line-height: 1.6;
+    background: #f7fafc;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
