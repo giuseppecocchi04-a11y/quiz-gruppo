@@ -111,7 +111,7 @@ hr {
     font-style: italic; /* Forza il testo in corsivo */
     /*text-transform: uppercase; Trasforma AUTOMATICAMENTE tutto il testo in MAIUSCOLO */
     letter-spacing: 0.5px; /* Spazia leggermente le lettere per renderlo più elegante */
-    margin: 0.5rem 0; /* Un pizzico di spazio sopra e sotto */
+    margin: 0 0 0.5rem 0; /* Un pizzico di spazio sopra e sotto */
     font-weight: 500;
 }
 
@@ -130,7 +130,7 @@ hr {
 
 .img-risultato {
     width: 100%;
-    max-width: 250px; /* Dimensione perfetta sia per lo schermo del PC che del telefono */
+    max-width: 350px; /* Dimensione perfetta sia per lo schermo del PC che del telefono */
     height: auto;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
