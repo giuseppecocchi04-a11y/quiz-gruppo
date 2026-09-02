@@ -225,6 +225,13 @@ function sottraiPunti(rispostaPrecedente) {
 }
 
 function mostraDomandaSulloSchermo() {
+    if (indiceDomandaCorrente >= listaDomande.length) {//solo alla fine
+        contenitoreDomanda.innerText = "Hai completato tutte le domande!";
+        contenitoreBottoni.innerHTML = "<p>Clicca sul tasto 'Invio' qui sotto per scoprire il tuo verdetto finale.</p>";
+        tastoInvio.classList.remove("btn-nascondi"); 
+        tastoIndietro.classList.remove("btn-nascondi");
+        
+        return;
     const domandaAttuale = listaDomande[indiceDomandaCorrente];
     // Usiamo .innerText per cambiare il testo della scatola HTML
     contenitoreDomanda.innerText = domandaAttuale.domanda;
@@ -263,11 +270,7 @@ function mostraDomandaSulloSchermo() {
         tastoIndietro.classList.add("btn-nascondi")
 
     }
-    if (indiceDomandaCorrente ===21) {
-        tastoInvio.classList.remove("btn-nascondi")
-    }else{
         tastoInvio.classList.add("btn-nascondi")
-    }
 
 }
 
