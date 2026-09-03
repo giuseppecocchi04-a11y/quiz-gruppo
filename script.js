@@ -185,7 +185,7 @@ const listaDomande = [
         ]
     },
     {
-        domanda: "21. Sei al pellegrinaggio Bevagna assisi, è sera, cosa fai?",
+        domanda: "21. Sei al pellegrinaggio Bevagna-Assisi, è sera, cosa fai?",
         risposte: [
             { testo: "A) Ceni con i tuoi amici storici e vai a dormire per essere in forma per la camminata del giorno dopo.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) Ceni con i preti in ostello e dopo ti fumi un sigaro con loro.", punti: { vip: 0, bot: 10, ritardati: 0 } },
