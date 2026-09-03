@@ -328,7 +328,7 @@ const listaDomandeF = [
 
     },
     {
-        domanda: "15. vado nel chioschetto e leggo un bel libro, nella speranza che i ritardati non vengano a disturbami con la loro stupidità. ",
+        domanda: "15. Sei nell'ostello di Bevagna-Assisi cosa fai?",
         risposte: [
             { testo: "A) Vado nel chioschetto e leggo un bel libro, nella speranza che i ritardati non vengano a disturbami con la loro stupidità.  ", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) Dopo aver fatto il pellegrinaggio esco di sera a prendere un gelato, ma rientro presto.", punti: { vip: 4, bot: 5, ritardati: 1 } },
@@ -543,25 +543,84 @@ contenitoreBottoni.style.justifyContent = "center";
 
 const mBottone = document.createElement("button");
 mBottone.innerText = "MASCHIO";
-mBottone.classList.add("btn-risposta");
-mBottone.classList.add("mbtn"); 
+
+// 🔵 STILE FORZATO IN JAVASCRIPT PER IL MASCHIO
+mBottone.style.backgroundColor = "#3182ce";
+mBottone.style.color = "#ffffff";
+mBottone.style.border = "2px solid #2b6cb0";
+mBottone.style.borderRadius = "16px";
+mBottone.style.padding = "1.2rem 1.5rem";
+mBottone.style.fontSize = "1.05rem";
+mBottone.style.fontWeight = "bold";
+mBottone.style.cursor = "pointer";
+mBottone.style.width = "45%";
+mBottone.style.textAlign = "center";
+mBottone.style.transition = "transform 0.2s ease, box-shadow 0.2s ease";
+
+// Effetto movimento quando ci passi sopra col mouse (Hover)
+mBottone.addEventListener("mouseenter", () => {
+    mBottone.style.transform = "translateY(-4px) scale(1.03)";
+    mBottone.style.backgroundColor = "#2b6cb0";
+    mBottone.style.boxShadow = "0 6px 15px rgba(49, 130, 206, 0.4)";
+});
+mBottone.addEventListener("mouseleave", () => {
+    mBottone.style.transform = "translateY(0) scale(1)";
+    mBottone.style.backgroundColor = "#3182ce";
+    mBottone.style.boxShadow = "none";
+});
+
 mBottone.addEventListener("click", () => {
     sessoScelto = "M";
     listaDomande = listaDomandeM;
-    contenitoreBottoni.style.flexDirection = "column"; // Questo serve, rimette il layout in verticale!
+    indiceDomandaCorrente = 0; 
+    contenitoreBottoni.style.flexDirection = "column"; 
     mostraDomandaSulloSchermo();  
 });
 
+
 const fBottone = document.createElement("button");
 fBottone.innerText = "FEMMINA";
-fBottone.classList.add("btn-risposta");
-fBottone.classList.add("fbtn");
+
+// 🔴 STILE FORZATO IN JAVASCRIPT PER LA FEMMINA
+fBottone.style.backgroundColor = "#e91e63";
+fBottone.style.color = "#ffffff";
+fBottone.style.border = "2px solid #c2185b";
+fBottone.style.borderRadius = "16px";
+fBottone.style.padding = "1.2rem 1.5rem";
+fBottone.style.fontSize = "1.05rem";
+fBottone.style.fontWeight = "bold";
+fBottone.style.cursor = "pointer";
+fBottone.style.width = "45%";
+fBottone.style.textAlign = "center";
+fBottone.style.transition = "transform 0.2s ease, box-shadow 0.2s ease";
+
+// Effetto movimento quando ci passi sopra col mouse (Hover)
+fBottone.addEventListener("mouseenter", () => {
+    fBottone.style.transform = "translateY(-4px) scale(1.03)";
+    fBottone.style.backgroundColor = "#c2185b";
+    fBottone.style.boxShadow = "0 6px 15px rgba(233, 30, 99, 0.4)";
+});
+fBottone.addEventListener("mouseleave", () => {
+    fBottone.style.transform = "translateY(0) scale(1)";
+    fBottone.style.backgroundColor = "#e91e63";
+    fBottone.style.boxShadow = "none";
+});
+
 fBottone.addEventListener("click", () => {
     sessoScelto = "F";
     listaDomande = listaDomandeF; 
-    contenitoreBottoni.style.flexDirection = "column"; // Questo serve, rimette il layout in verticale!
+    indiceDomandaCorrente = 0; 
+    contenitoreBottoni.style.flexDirection = "column"; 
     mostraDomandaSulloSchermo();  
 });
+
+
+// Configurazione del contenitore per tenerli agganciati e affiancati
+contenitoreBottoni.style.display = "flex";
+contenitoreBottoni.style.flexDirection = "row"; 
+contenitoreBottoni.style.justifyContent = "center"; 
+contenitoreBottoni.style.gap = "1.5rem";
+contenitoreBottoni.style.width = "100%";
 
 contenitoreBottoni.appendChild(mBottone);
 contenitoreBottoni.appendChild(fBottone);
