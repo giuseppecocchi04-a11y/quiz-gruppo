@@ -21,7 +21,7 @@ const listaDomande = [
         domanda: "2. C'è una predica di Gubitosi sulla gnosi spuria, tu cosa fai?",
         risposte: [
             { testo: "A) Sono interessato e ascolto.", punti: { vip: 3, bot: 7, ritardati: 0 } },
-            { testo: "B) Sono interested, ascolto e prendo appunti.", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "B) Sono interessato, ascolto e prendo appunti.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) Non lo so, non lo sto ascoltando troppo.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "D) Impossibile, io non vado alle conferenze.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
@@ -306,7 +306,9 @@ function calcolaRisultato(){
         🌀 Disorganizzazione<br>
         🤪 Gruppo ritardati<br><br>
         <b>Animale simbolo:</b><br>
-        🦌 Il Cervo (Animale simbolo di Regalità che ama stare nella foresta senza essere disturbato).`;
+        🦌 Il Cervo (Animale simbolo di Regalità che ama stare nella foresta senza essere disturbato).
+        <i>Nota bene: La vita del nobile è piena di onori ma anche di oneri.<br><br>
+        Hai le porte aperte in mille cose. Il gruppo vip è un gruppo elitario si, ma sinonimo di responsabilità, loro organizzano i raduni, i pellegrinaggi, non accettano che la pigrizia o i loro sentimenti li sovrastino. Fare sempre il proprio dovere anche quando non vorresti, sei pronto per questa sfida ?</i>`;
     } else if (vincitore === bot) {
         nomeImmagine = "bot.jpg";
         testoProfilo = `👼 PROFILO BOT:<br><br>
@@ -324,9 +326,9 @@ function calcolaRisultato(){
         🐺 Falsi pastori<br><br>
         <b>Animale simbolo:</b><br>
         🐦 L'Uccello Tessitore (Animale che passa la vita a costruire il nido per la sua famiglia e che si impegna nel silenzio per l'ecosistema. Senza di lui l'equilibrio che regge la natura soffrirebbe).<br><br>
-        Tu, creatura che stai leggendo, apprendi bene, la vera differenza tra i bot e gli altri non è nella personalità o nel pensiero, è nei risultati, i bot sono gli alberi da frutto, costoro sono il tronco della fraternità la sua grande parte, sono coloro che si sposano, danno vocazioni e aiutano la fraternità non solo a sopravvivere ma ad andare avanti. Sono coloro che lontano dalla luce dell'uomo ma vicina a quella spirituale costruiscono il futuro, gli eroi che il mondo non celebra ma di cui necessita per diventare un posto migliore. 
+        <i>Tu, creatura che stai leggendo, apprendi bene, la vera differenza tra i bot e gli altri non è nella personalità o nel pensiero, è nei risultati, i bot sono gli alberi da frutto, costoro sono il tronco della fraternità la sua grande parte, sono coloro che si sposano, danno vocazioni e aiutano la fraternità non solo a sopravvivere ma ad andare avanti. Sono coloro che lontano dalla luce dell'uomo ma vicina a quella spirituale costruiscono il futuro, gli eroi che il mondo non celebra ma di cui necessita per diventare un posto migliore. 
         Puoi pensare che i bot siano anonimi, che non si distinguano nel bene o nel male, ma in realtà si distinguono nel fare. 
-        A te che fai parte di questo gruppo va il nostro grazie.`;
+        A te che fai parte di questo gruppo va il nostro grazie.</i>`;
     } else {
         nomeImmagine = "ritardati.jpg";
         testoProfilo = `🤪 PROFILO RITARDATO:<br><br>
