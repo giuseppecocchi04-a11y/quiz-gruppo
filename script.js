@@ -354,8 +354,8 @@ function calcolaRisultato(){
     contenitoreBottoni.innerHTML=`
         <div class="risultato-box">
             <p class="disclaimer-finale">
-                DISCLAIMER: La natura umana è troppo complessa per essere racchiusa in un gruppo, è impensabile classificare decine, centinaia di persone in una sola descrizione. Per tanto è chiaro che alla fine del test potresti provare una situazione di smarrimento, in quanto riconosci che hai delle cose in comune con il gruppo di appartenenza ma non ti ci rivedi appieno. 
-                Non allarmarti non hai sbagliato tu e nemmeno il test, semplicemente il test indica con quale gruppo hai una maggiore affinità, non quello che sei realmente, anche gli esponenti più illustri dei vari gruppi hanno elementi di gruppi diversi. Non temere il test non mente e come ultimo consiglio accetta il risultato con pace, non mentire a te stesso..
+                DISCLAIMER: La natura umana è troppo complessa per essere racchiusa in un solo gruppo: è impensabile classificare decine o centinaia di persone con un'unica descrizione. Pertanto, è del tutto normale provare una sensazione di smarrimento alla fine del test, riconosci di avere punti in comune con il gruppo assegnato, senza però rivedertici appieno.
+                Non allarmarti: non hai sbagliato tu e non ha sbagliato il test. Il risultato indica semplicemente il gruppo con cui hai una maggiore affinità, non chi sei realmente (persino gli esponenti più illustri di ciascun gruppo condividono tratti di altre categorie). Non temere, il test non mente, come ultimo consiglio accetta il risultato con serenità e senza mentire a te stesso...
             </p>
 
             <img src="${nomeImmagine}" alt="Immagine Profilo" class="img-risultato">
