@@ -41,7 +41,7 @@ hr {
 #answer-buttons {
     display: flex;
     flex-direction: column; /* Dispone i bottoni uno sotto l'altro, perfetto per il pollice */
-    gap: 1rem; /* Spazio uniforme tra i bottoni */
+    gap: 1.5rem; /* Spazio uniforme tra i bottoni */
     width: 100%;
     margin-bottom: 2rem;
 }
