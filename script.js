@@ -232,6 +232,7 @@ function mostraDomandaSulloSchermo() {
         tastoIndietro.classList.remove("btn-nascondi");
         
         return;
+    }
     const domandaAttuale = listaDomande[indiceDomandaCorrente];
     // Usiamo .innerText per cambiare il testo della scatola HTML
     contenitoreDomanda.innerText = domandaAttuale.domanda;
@@ -270,7 +271,7 @@ function mostraDomandaSulloSchermo() {
         tastoIndietro.classList.add("btn-nascondi")
 
     }
-        tastoInvio.classList.add("btn-nascondi")
+    tastoInvio.classList.add("btn-nascondi")
 
 }
 
