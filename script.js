@@ -12,7 +12,7 @@ const listaDomande = [
         domanda: "1. Preferisci il potere o la libertà?",
         risposte: [
             { testo: "A) Da grandi poteri derivano grandi responsabilità.", punti: { vip: 3, bot: 7, ritardati: 0 } },
-            { testo: "B) La libertà, non mi interessa il potere se mi lega in qualsiasi modo, preferisco rimanre enell'ombra e operare per il bene in silenzio.", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "B) La libertà, non mi interessa il potere se mi lega in qualsiasi modo, preferisco rimanere nell'ombra e operare per il bene in silenzio.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) Una vodka liscia.", punti: { vip: 0, bot: 0, ritardati: 10 } },
             { testo: "D) Il potere, anche se ciò significa impegnarmi e sacrificarmi per gli altri.", punti: { vip: 10, bot: 0, ritardati: 0 } }
         ]
