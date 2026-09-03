@@ -12,7 +12,7 @@ const listaDomande = [
         domanda: "1. Preferisci il potere o la libertà?",
         risposte: [
             { testo: "A) Da grandi poteri derivano grandi responsabilità.", punti: { vip: 3, bot: 7, ritardati: 0 } },
-            { testo: "B) La libertà, non mi interessa il potere se mi lega in qualsiasi modo, preferisco rimanre enell'ombra e operare per il bene in silenzio.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) La libertà, non mi interessa il potere se mi lega in qualsiasi modo, preferisco rimanre enell'ombra e operare per il bene in silenzio.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) Una vodka liscia.", punti: { vip: 0, bot: 0, ritardati: 10 } },
             { testo: "D) Il potere, anche se ciò significa impegnarmi e sacrificarmi per gli altri.", punti: { vip: 10, bot: 0, ritardati: 0 } }
         ]
@@ -58,16 +58,16 @@ const listaDomande = [
         risposte: [
             { testo: "A) Alzi la manica della maglietta e stringi il bicipite possente.", punti: { vip: 0, bot: 0, ritardati: 10 } },
             { testo: "B) Abbassi lo sguardo per non cadere nella tentazione carnale.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) Cammini normalmente e sorridi loro.", punti: { vip: 4, bot: 6, ritardati: 0 } },
+            { testo: "C) Cammini normalmente e sorridi loro.", punti: { vip: 6, bot: 4, ritardati: 0 } },
             { testo: "D) Ti avvicini e dici loro: \"Ogni centimetro di pelle scoperta in questa vita, brucerà per sempre nell'altra\"", punti: { vip: 0, bot: 10, ritardati: 0 } }
         ]
     },
     {
         domanda: "7. Sei ad un incontro giovani e ti chiedono di intavolare un discorso.",
         risposte: [
-            { testo: "A) Se Tolkien pensava agli angeli quando ha creato gli elfi.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "B) La scomunica della fraternità.", punti: { vip: 5, bot: 5, ritardati: 0 } },
-            { testo: "C) Non hai un discorso preferito, dipende dalle circostanze.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "A) Se Tolkien pensava agli angeli quando ha creato gli elfi.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) La scomunica della fraternità.", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "C) Non hai un discorso preferito, dipende dalle circostanze.", punti: { vip: 4, bot: 3, ritardati: 3 } },
             { testo: "D) È meglio fare richiamo di dorso piuttosto che fare gambe.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
     },
@@ -99,9 +99,11 @@ const listaDomande = [
     {
         domanda: "11. Quale dei seguenti generi musicali senti più affine a te?",
         risposte: [
-            { testo: "A) Musica classica.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "B) Musica pop-rock.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) Musica rap.", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "A) Musica classica.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) Musica rap.", punti: { vip: 0, bot: 0, ritardati: 10 } },
+            { testo: "C) Musica gregoriana.", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "D) Altri generi.", punti: { vip: 3 , bot: 4, ritardati: 3 } }
+
         ]
     },
     {
@@ -140,8 +142,8 @@ const listaDomande = [
     {
         domanda: "16. Vai in un altro paese e i tuoi compagni vogliono visitare una torre",
         risposte: [
-            { testo: "A) Sei interessato e consigli di prendere una guida.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "B) Sei interessato ma preferisci spendere quei soldi per vedere la cattedrale.", punti: { vip: 5, bot: 5, ritardati: 0 } },
+            { testo: "A) Sei interessato e consigli di prendere una guida.", punti: { vip: 5, bot: 5, ritardati: 0 } },
+            { testo: "B) Sei interessato ma preferisci spendere quei soldi per vedere la cattedrale.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) La visiti indifferente soltanto per poter dire di avantla visitata.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "D) Compri il biglietto solo per testare i bagni medioevali e fare una trazione a 72m di altezza.", punti: { vip: 0, bot: 0, ritardati: 10 } },
         ]
@@ -149,16 +151,16 @@ const listaDomande = [
     {
         domanda: "17. Come reagiscono le persone quando sanno che i loro cari escono con te?",
         risposte: [
-            { testo: "A) 'Sono contento che esci con lui, potreste anche fare più cose insieme è così un bravo ragazzo.'", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "B) 'Ah, esce con te, non l'avevo notato.'", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) 'Hai una sedia, ho bisogno di sedermi un attimo.'", punti: { vip: 0, bot: 0, ritardati: 10 } },
+            { testo: "A) 'Sono contento che esci con lui, potreste anche fare più cose insieme è così un bravo ragazzo.'", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) 'Ah, esce con te, non l'avevo notato.'", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "C) 'Hai una sedia, ho bisogno di sedermi un attimo.'", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     },
     {
         domanda: "18. Il pellegrinaggio delle sette chiese, tu cosa fai?",
         risposte: [
-            { testo: "A) Ci vai di buon zelo.", punti: { vip: 5, bot: 5, ritardati: 0 } },
+            { testo: "A) Ci vai di buon zelo.", punti: { vip: 2, bot: 7, ritardati: 1 } },
             { testo: "B) Non ci vai perché cade proprio durante gli esercizi spirituali di Sant'ignazio.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) Ci andresti ma devi studiare.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "D) Non ci vai perché in quella settimana c'è il Mister Olimpia.", punti: { vip: 0, bot: 0, ritardati: 10 } }
@@ -167,8 +169,8 @@ const listaDomande = [
     {
         domanda: "19. È post cena dell'incontro giovani, cosa fai?",
         risposte: [
-            { testo: "A) Vai a parlare su delle panchine.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "B) Vai a dormire.", punti: { vip: 5, bot: 5, ritardati: 0 } },
+            { testo: "A) Ti riunisci con il tuo piccolo gruppetto di amici.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) Vai a dormire.", punti: { vip: 3, bot: 7, ritardati: 0 } },
             { testo: "C) Vai a finire le tue orazioni.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "D) Ti butti in una fontana alle 3 di notte.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
@@ -177,9 +179,9 @@ const listaDomande = [
         domanda: "20. Sei all'incontro giovani e lo staff si allontana dai fusti di birra quasi intonsi, cosa fai?",
         risposte: [
             { testo: "A) Ne rubi uno e vai a berlo con i tuoi amici nel campo da basket.", punti: { vip: 0, bot: 0, ritardati: 10 } },
-            { testo: "B) Sei astemio.", punti: { vip: 5, bot: 5, ritardati: 0 } },
+            { testo: "B) Sei astemio.", punti: { vip: 3, bot: 7, ritardati: 0 } },
             { testo: "C) Sei temperante e ti riempi solo un bicchiere.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "D) Devi guidare e quindi decidi che è più saggio non bere.", punti: { vip: 10, bot: 0, ritardati: 0 } }
+            { testo: "D) Devi guidare e quindi decidi che è più saggio non bere troppo.", punti: { vip: 10, bot: 0, ritardati: 0 } }
         ]
     },
     {
@@ -187,15 +189,15 @@ const listaDomande = [
         risposte: [
             { testo: "A) Ceni con i tuoi amici storici e vai a dormire per essere in forma per la camminata del giorno dopo.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) Ceni con i preti in ostello e dopo ti fumi un sigaro con loro.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "C) After dinner cerchi di incontrare il gruppo di ragazzi che si è organizzato per andare a prendere un gelato.", punti: { vip: 5, bot: 5, ritardati: 0 } },
+            { testo: "C) Dopo cena cerchi di incontrare il gruppo di ragazzi che si è organizzato per andare a prendere un gelato.", punti: { vip: 5, bot: 5, ritardati: 0 } },
             { testo: "D) Ceni in un bar vedendo la partita e giri per Foligno incontrando ragazzi strani.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
     },
     {
         domanda: "22. Hai la patente da qualche mese, quale credi che sia lo scenario più plausibile?",
         risposte: [
-            { testo: "A) 'Tieni figlio mio, guida pure la mia auto, mi fido ciecamente'.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "B) 'Ok guida ma fai molta attenzione la strada non è facile'.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "A) 'Tieni figlio mio, guida pure la mia auto, mi fido ciecamente'.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) 'Ok guida ma fai molta attenzione la strada non è facile'.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) 'Emmm Papà... C'è la macchina a terra sdraiata con i vetri rotti'.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
     }
@@ -341,7 +343,7 @@ function calcolaRisultato(){
         🎤 Conferenze<br><br>
         <b>Animale simbolo:</b><br>
         🐔 Il Pollo (quello che mangiano tutti i giorni tranne il venerdì dove invece mangiano tonno)<br><br>
-        <i>Ricorda: in questo gruppo sono presenti elementi che hanno dato pugni nei muri, gente che ha distrutto macchine e altri che si sono buttati nelle fontane di Rimini alle 3 di notte.</i>`;
+        <i>Ricorda: in questo gruppo sono presenti elementi che hanno dato pugni nei muri, gente che ha distrutto macchine e altri che si sono buttati nelle fontane di Rimini alle 3 di notte. Appartenere a questo gruppo non è per tutti, solo i peggiori possono farlo. </i>`;
     }
     tastoIndietro.classList.add("btn-nascondi");
     tastoInvio.classList.add("btn-nascondi");
@@ -354,11 +356,12 @@ function calcolaRisultato(){
                 Non allarmarti non hai sbagliato tu e nemmeno il test, semplicemente il test indica con quale gruppo hai una maggiore affinità, non quello che sei realmente, anche gli esponenti più illustri dei vari gruppi hanno elementi di gruppi diversi. Non temere il test non mente e come ultimo consiglio accetta il risultato con pace, non mentire a te stesso..
             </p>
 
-            <h2>${testoProfilo}</h2>
-
             <img src="${nomeImmagine}" alt="Immagine Profilo" class="img-risultato">
             
             <p>Appartieni al gruppo Vip al ${vip}%, al Bot al ${bot}%, ai Ritardati al: ${ritardati}%</p>
+
+            <h2>${testoProfilo}</h2>
+
 
         </div>
     `;
