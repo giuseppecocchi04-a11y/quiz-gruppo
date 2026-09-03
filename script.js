@@ -196,7 +196,7 @@ const listaDomande = [
         risposte: [
             { testo: "A) 'Tieni figlio mio, guida pure la mia auto, mi fido ciecamente'.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "B) 'Ok guida ma fai molta attenzione la strada non è facile'.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) 'Emmm Papà... C'è la macchina a terra sdraiata con i vetri rotti'.", punti: { vip: 0, bot: 0, ritardati: 0 } }
+            { testo: "C) 'Emmm Papà... C'è la macchina a terra sdraiata con i vetri rotti'.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
     }
 ];
@@ -350,7 +350,7 @@ function calcolaRisultato(){
         <div class="risultato-box">
             <p class="disclaimer-finale">
                 DISCLAIMER: La natura umana è troppo complessa per essere racchiusa in un gruppo, è impensabile classificare decine, centinaia di persone in una sola descrizione. Per tanto è chiaro che alla fine del test potresti provare una situazione di smarrimento, in quanto riconosci che hai delle cose in comune con il gruppo di appartenenza ma non ti ci rivedi appieno. 
-                Non allarmarti non hai sbagliato tu e nemmeno il test, semplicemente il test indica con quale gruppo hai una maggiore affinità, non quello che sei realmente, anche gli esponenti più illustri dei vari gruppi hanno elementi di gruppi diversi. Non temere il test non mente e come ultimo coniglio accetta il risultato con pace, non mentire a te stesso..
+                Non allarmarti non hai sbagliato tu e nemmeno il test, semplicemente il test indica con quale gruppo hai una maggiore affinità, non quello che sei realmente, anche gli esponenti più illustri dei vari gruppi hanno elementi di gruppi diversi. Non temere il test non mente e come ultimo consiglio accetta il risultato con pace, non mentire a te stesso..
             </p>
 
             <h2>${testoProfilo}</h2>
