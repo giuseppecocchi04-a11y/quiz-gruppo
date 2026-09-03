@@ -358,7 +358,7 @@ function calcolaRisultato(){
 
             <img src="${nomeImmagine}" alt="Immagine Profilo" class="img-risultato">
             
-            <p>Apparttieni al gruppo Vip al ${vip}%, al Bot al ${bot}%, ai Ritardati al: ${ritardati}%</p>
+            <p>Appartieni al gruppo Vip al ${vip}%, al Bot al ${bot}%, ai Ritardati al: ${ritardati}%</p>
 
         </div>
     `;
