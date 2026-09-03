@@ -473,7 +473,7 @@ function calcolaRisultato(){
         A te che fai parte di questo gruppo va il nostro grazie.</i>`;
     } else {
         nomeImmagine = (sessoScelto === "M") ? "ritardati.jpg" : "ritardati_f.jpg";;
-        testoProfilo = `🤪 ${sessoScelto === "M" ? "RITARDATO" : "RITARDATA"}:<br><br>
+        testoProfilo = `🤪 PROFILO ${sessoScelto === "M" ? "RITARDATO" : "RITARDATA"}:<br><br>
         ${sessoScelto === "M" ? "Ti sei fatto richiamare dal preside quando eri a scuola? Hai mai distrutto una macchina? Tua madre ti ha mai detto: 'non chiamarmi mamma quando siamo fuori!'?<br>" : "Sei andata via da una scuola della fraternità? Dopo aver portato a casa un fidanzato tua madre si è messa a urlare: perché proprio a me un malessere? I tuoi genitori ti dicono di ascoltare Paganini ma tu preferisci Tony Pitony?<br>"}
         Come dici? Sì? Bene, allora sei nel posto giusto, il gruppo ritardati FSSPX Italia ti apre le porte.<br><br>
         Qui troverai amici, risate e tanto tanto vino. Non illuderti, i ritardati non sono quel gruppo inutile che sul finire della storia fanno qualcosa di grande, loro sono il gruppo che fa danni dall'inizio alla fine. La loro utilità? Nessuna.<br><br>
@@ -557,4 +557,4 @@ fBottone.addEventListener("click", () => {
 
 contenitoreBottoni.appendChild(mBottone);
 contenitoreBottoni.appendChild(fBottone);
-mostraDomandaSulloSchermo();
+
