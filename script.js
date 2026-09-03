@@ -144,7 +144,7 @@ const listaDomande = [
         risposte: [
             { testo: "A) Sei interessato e consigli di prendere una guida.", punti: { vip: 5, bot: 5, ritardati: 0 } },
             { testo: "B) Sei interessato ma preferisci spendere quei soldi per vedere la cattedrale.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "C) La visiti indifferente soltanto per poter dire di avantla visitata.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "C) La visiti indifferente soltanto per poter dire di averla visitata.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "D) Compri il biglietto solo per testare i bagni medioevali e fare una trazione a 72m di altezza.", punti: { vip: 0, bot: 0, ritardati: 10 } },
         ]
     },
