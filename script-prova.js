@@ -543,6 +543,7 @@ contenitoreBottoni.style.justifyContent = "center";
 
 const mBottone = document.createElement("button");
 mBottone.innerText = "MASCHIO";
+mBottone.classList.add("btn-risposta");
 mBottone.classList.add("mbtn"); 
 mBottone.addEventListener("click", () => {
     sessoScelto = "M";
@@ -553,6 +554,7 @@ mBottone.addEventListener("click", () => {
 
 const fBottone = document.createElement("button");
 fBottone.innerText = "FEMMINA";
+fBottone.classList.add("btn-risposta");
 fBottone.classList.add("fbtn");
 fBottone.addEventListener("click", () => {
     sessoScelto = "F";
