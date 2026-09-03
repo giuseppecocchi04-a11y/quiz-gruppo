@@ -47,7 +47,7 @@ const listaDomande = [
     {
         domanda: "5. È l'anniversario con la tua ragazza, e lei ti chiede cosa hai intenzione di fare la sera.",
         risposte: [
-            { testo: "A) La porti in un ristorante carino e gli compri i fiori.", punti: { vip: 5, bot: 5, ritardati: 0 } },
+            { testo: "A) La porti in un ristorante carino e le compri dei fiori.", punti: { vip: 5, bot: 5, ritardati: 0 } },
             { testo: "B) Le dici che sei alla benedizione eucaristica.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) Purtroppo sei costretto a rimandare per un contrattempo a lavoro.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "D) Vai in palestra a fare petto e richiamo di femorali.", punti: { vip: 0, bot: 0, ritardati: 10 } }
