@@ -332,8 +332,8 @@ const listaDomandeF = [
         risposte: [
             { testo: "A) Vado nel chioschetto e leggo un bel libro, nella speranza che i ritardati non vengano a disturbami con la loro stupidità.  ", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) Dopo aver fatto il pellegrinaggio esco di sera a prendere un gelato, ma rientro presto.", punti: { vip: 4, bot: 5, ritardati: 1 } },
-            { testo: "C) Dopo il pellegrinaggio vado subito a pregare, cenare e poi a letto. ", punti: { vip: 0, bot: 10, ritardati: 0 } }
-            { testo: "D) Esco e faccio fino a tardi bevendo un o più drink.", punti: { vip: 0, bot: 0, ritardati: 10 } },
+            { testo: "C) Dopo il pellegrinaggio vado subito a pregare, cenare e poi a letto. ", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "D) Esco e faccio fino a tardi bevendo un o più drink.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     }
