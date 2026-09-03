@@ -432,7 +432,7 @@ function calcolaRisultato(){
     let nomeImmagine = "";
     let testoProfilo = "";
 
-     if (vincitore === vip) {
+    if (vincitore === vip) {
         nomeImmagine = (sessoScelto === "M") ? "vip.jpg" : "vip_f.jpg";  // Cambia in .png se l'immagine è un PNG
         testoProfilo = `👑 PROFILO VIP:<br><br>
         Leggere un buon libro nella calma di un chioschetto di un albergo, ascoltare un po' di sana musica classica, vivere nella pace ricordando di avere degli impegni che devono essere compiuti!<br>
@@ -452,7 +452,7 @@ function calcolaRisultato(){
         <i>Nota bene: La vita del nobile è piena di onori ma anche di oneri.
         Hai le porte aperte in mille cose. Il gruppo vip è un gruppo elitario si, ma sinonimo di responsabilità, loro organizzano i raduni, i pellegrinaggi, non accettano che la pigrizia o i loro sentimenti li sovrastino. Fare sempre il proprio dovere anche quando non vorresti, sei ${sessoScelto === "M" ? "pronto" : "pronta"} per questa sfida ?</i>`;
     } else if (vincitore === bot) {
-        nomeImmagine = (sessoScelto === "M") ? "bot.jpg" : "bot_f.jpg";;
+        nomeImmagine = (sessoScelto === "M") ? "bot.jpg" : "bot_f.jpg";
         testoProfilo = `👼 PROFILO BOT:<br><br>
         Visibilità? Chiasso? Potere? Irresponsabilità? Cosa costruisce chi cerca o possiede queste cose? Nulla.<br>
         Non è il potere che mi darà il cielo, o il chiasso che mi darà la felicità.<br><br>
@@ -472,9 +472,12 @@ function calcolaRisultato(){
         Puoi pensare che i bot siano anonimi, che non si distinguano nel bene o nel male, ma in realtà si distinguono nel fare. 
         A te che fai parte di questo gruppo va il nostro grazie.</i>`;
     } else {
-        nomeImmagine = (sessoScelto === "M") ? "ritardati.jpg" : "ritardati_f.jpg";;
+        nomeImmagine = (sessoScelto === "M") ? "ritardati.jpg" : "ritardati_f.jpg";
         testoProfilo = `🤪 PROFILO ${sessoScelto === "M" ? "RITARDATO" : "RITARDATA"}:<br><br>
-        ${sessoScelto === "M" ? "Ti sei fatto richiamare dal preside quando eri a scuola? Hai mai distrutto una macchina? Tua madre ti ha mai detto: 'non chiamarmi mamma quando siamo fuori!'?<br>" : "Sei andata via da una scuola della fraternità? Dopo aver portato a casa un fidanzato tua madre si è messa a urlare: perché proprio a me un malessere? I tuoi genitori ti dicono di ascoltare Paganini ma tu preferisci Tony Pitony?<br>"}
+        ${sessoScelto === "M" 
+        ? "Ti sei fatto richiamare dal preside quando eri a scuola? Hai mai distrutto una macchina? Tua madre ti ha mai detto: 'non chiamarmi mamma quando siamo fuori!'?<br>" 
+        : "Sei andata via da una scuola della fraternità? Dopo aver portato a casa un fidanzato tua madre si è messa a urlare: perché proprio a me un malessere? I tuoi genitori ti dicono di ascoltare Paganini ma tu preferisci Tony Pitony?<br>"
+        }
         Come dici? Sì? Bene, allora sei nel posto giusto, il gruppo ritardati FSSPX Italia ti apre le porte.<br><br>
         Qui troverai amici, risate e tanto tanto vino. Non illuderti, i ritardati non sono quel gruppo inutile che sul finire della storia fanno qualcosa di grande, loro sono il gruppo che fa danni dall'inizio alla fine. La loro utilità? Nessuna.<br><br>
         <b>Tendenzialmente attratti da:</b><br>
@@ -486,8 +489,10 @@ function calcolaRisultato(){
         🎻 Musica classica<br>
         🎤 Conferenze<br><br>
         <b>Animale simbolo:</b><br>
-        🐔 Il Pollo (quello che mangiano tutti i giorni tranne il venerdì dove invece mangiano tonno)<br><br>
-        <i>Ricorda: In questo gruppo sono presenti elementi che hanno dato pugni nei muri, gente che ha distrutto macchine e altri che si sono buttati nelle fontane di Rimini alle 3 di notte. Appartenere a questo gruppo non è per tutti, solo i peggiori possono farlo.</i>`;
+        ${sessoScelto === "M" 
+        ? "🐔 Il Pollo (quello che mangiano tutti i giorni tranne il venerdì dove invece mangiano tonno)<br><br><i>Ricorda: In questo gruppo sono presenti elementi che hanno dato pugni nei muri, gente che ha distrutto macchine e altri che si sono buttati nelle fontane di Rimini alle 3 di notte. Appartenere a questo gruppo non è per tutti, solo i peggiori possono farlo.</i>" 
+        : "🦦 Faina (può sembrare dolce e gentile fuori, ma dentro nasconde un'energia illimitata ed è estremamente difficile da disciplinare)<br><br><i>Chi ha detto che la bellezza si trova solo nelle principesse? Una ballerina indomabile e forse meno bella di una principessa chiusa nella sua torre?</i>"
+        }`;
     }
     tastoIndietro.classList.add("btn-nascondi");
     tastoInvio.classList.add("btn-nascondi");
@@ -509,6 +514,7 @@ function calcolaRisultato(){
 
         </div>
     `;
+
 }
 tastoIndietro.addEventListener("click", () => {
     // Controlliamo che non siamo alla prima domanda, altrimenti andremmo sotto lo zero!
