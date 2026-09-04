@@ -421,6 +421,7 @@ function calcolaRisultato(){
     let vip = punteggioTotale.vip;
     let bot = punteggioTotale.bot;
     let ritardati = punteggioTotale.ritardati;
+    
     if (sessoScelto === "M"){
         vip= Math.round((vip*100)/220);
         bot= Math.round((bot*100)/220);
