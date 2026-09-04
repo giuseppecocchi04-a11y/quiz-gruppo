@@ -295,7 +295,7 @@ const listaDomandeF = [
         risposte: [
             { testo: "A) Sei interessata e consigli di prendere una guida.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) Sei interessata ma preferisci spendere quei soldi per vedere la cattedrale.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "C) La visiti indifferente soltanto per poter dire di averla visitata.", punti: { vip: 0, bot: 0, ritardati: 10 } 
+            { testo: "C) La visiti indifferente soltanto per poter dire di averla visitata.", punti: { vip: 0, bot: 0, ritardati: 10 }} 
         ]
     },
     {
