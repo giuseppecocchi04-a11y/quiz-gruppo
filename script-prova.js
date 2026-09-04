@@ -437,7 +437,7 @@ function calcolaRisultato(){
     }else{
         vip= Math.round((vip*100)/160);
         bot= Math.round((bot*100)/160);
-        ritardati= Math.round((ritardati*100)/150);
+        ritardati= Math.round((ritardati*100)/160);
     }
         
     const vincitore = Math.max(vip, bot, ritardati)
