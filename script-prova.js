@@ -216,8 +216,8 @@ const listaDomandeF = [
     {
         domanda: "2. C'è una predica di Gubitosi sulla gnosi spuria, tu cosa fai?",
         risposte: [
-            { testo: "A) Sono interessato e ascolto.", punti: { vip: 3, bot: 7, ritardati: 0 } },
-            { testo: "B) Sono interessato, ascolto e prendo appunti.", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "A) Sono interessata e ascolto.", punti: { vip: 3, bot: 7, ritardati: 0 } },
+            { testo: "B) Sono interessata, ascolto e prendo appunti.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) Non lo so, non lo sto ascoltando troppo.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "D) Impossibile, io non vado alle conferenze.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
@@ -228,16 +228,15 @@ const listaDomandeF = [
             { testo: "A) Se Tolkien pensava agli angeli quando ha creato gli elfi.", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) La scomunica della fraternità.", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "C) Non hai un discorso preferito, dipende dalle circostanze.", punti: { vip: 4, bot: 3, ritardati: 3 } },
-            { testo: "D) È meglio fare richiamo di dorso piuttosto che fare gambe.", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "D) Parli di gossip (Maria ha lasciato Sigismondo).", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
     },
     {
-        domanda: "4. Sei appena tornato a casa dopo 10 ore di lavoro in cantiere e ti arriva la notifica dal gruppo giovani. Una ragazza ha inviato la predica domenicale di don Marco, con tanto di faccina: 🤗💐. Come rispondi?",
+        domanda: "4. Sei appena tornata a casa dopo una lunga giornata di di lavoro, e ti arriva una notifica dal gruppo giovani. Una ragazzo ha inviato la predica domenicale di don Marco, con tanto di faccina: 🤗💐. Come rispondi?",
         risposte: [
-            { testo: "A) \"Grazie carissima🙏\".", punti: { vip: 3, bot: 7, ritardati: 0 } },
-            { testo: "B) Non rispondi.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) \"Bellissima❤️. Ascoltate invece questa di padre Daniele a Budrio\" (alleghi la predica).", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "D) Reagisci con una emoji di un polipo.", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "A) \"Grazie🙏\".", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) Non rispondi.", punti: { vip: 0, bot: 0, ritardati: 10 } },
+            { testo: "C) \"Bellissima❤️. Ascoltate invece questa di padre Daniele a Budrio\" (alleghi la predica).", punti: { vip: 0, bot: 10, ritardati: 0 } }
         ]
     },
     {
@@ -292,20 +291,19 @@ const listaDomandeF = [
         ]
     },
     {
-        domanda: "11. Vai in un altro paese e i tuoi compagni vogliono visitare una torre",
+        domanda: "11. Vai in un altro paese e le tue compagne vogliono visitare una torre",
         risposte: [
-            { testo: "A) Sei interessato e consigli di prendere una guida.", punti: { vip: 5, bot: 5, ritardati: 0 } },
-            { testo: "B) Sei interessato ma preferisci spendere quei soldi per vedere la cattedrale.", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "C) La visiti indifferente soltanto per poter dire di averla visitata.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "D) Compri il biglietto solo per testare i bagni medioevali e fare una trazione a 72m di altezza.", punti: { vip: 0, bot: 0, ritardati: 10 } },
+            { testo: "A) Sei interessata e consigli di prendere una guida.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "B) Sei interessata ma preferisci spendere quei soldi per vedere la cattedrale.", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "C) La visiti indifferente soltanto per poter dire di averla visitata.", punti: { vip: 0, bot: 0, ritardati: 10 } 
         ]
     },
     {
         domanda: "12. Come reagiscono le persone quando sanno che i loro cari escono con te?",
         risposte: [
-            { testo: "A) 'Sono contento che esci con lui, potreste anche fare più cose insieme è così un bravo ragazzo.'", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "A) 'Sono contento che esci con lei, potreste anche fare più cose insieme è così un brava ragazza.'", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) 'Ah, esce con te, non l'avevo notato.'", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "C) 'Hai una sedia, ho bisogno di sedermi un attimo.'", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "C) 'Stai attento a lei frequenta strani ragazzi'", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     },
@@ -321,9 +319,9 @@ const listaDomandeF = [
     {
         domanda: "14. Un ragazzo ci prova con te: ",
         risposte: [
-            { testo: "A) Gli dico di no, non è abbastanza serio ", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "B) gli dico di no, non è abbastanza.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) gli dico di no, non è il malessere.", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "A) Gli dico di no, non ha le idee chiare. ", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "B) Gli dico di no, non è abbastanza.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "C) Gli dico di no, non è troppo ligio.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     },
@@ -333,7 +331,7 @@ const listaDomandeF = [
             { testo: "A) Vado nel chioschetto e leggo un bel libro, nella speranza che i ritardati non vengano a disturbami con la loro stupidità.  ", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) Dopo aver fatto il pellegrinaggio esco di sera a prendere un gelato, ma rientro presto.", punti: { vip: 4, bot: 5, ritardati: 1 } },
             { testo: "C) Dopo il pellegrinaggio vado subito a pregare, cenare e poi a letto. ", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "D) Esco e faccio fino a tardi bevendo un o più drink.", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "D) Esco e fino a tardi bevendo e gossippando", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     }
