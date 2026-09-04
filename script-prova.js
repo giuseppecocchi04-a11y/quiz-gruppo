@@ -303,7 +303,7 @@ const listaDomandeF = [
         risposte: [
             { testo: "A) 'Sono contento che esci con lei, potreste anche fare più cose insieme è così un brava ragazza.'", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) 'Ah, esce con te, non l'avevo notato.'", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "C) 'Stai attento a lei frequenta strani ragazzi'", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "C) 'Stai attento a lei frequenta strani ragazzi.'", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     },
@@ -321,7 +321,7 @@ const listaDomandeF = [
         risposte: [
             { testo: "A) Gli dico di no, non ha le idee chiare. ", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "B) Gli dico di no, non è abbastanza.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) Gli dico di no, non è troppo ligio.", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "C) Gli dico di no, è troppo ligio.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     },
@@ -331,7 +331,7 @@ const listaDomandeF = [
             { testo: "A) Vado nel chioschetto e leggo un bel libro, nella speranza che i ritardati non vengano a disturbami con la loro stupidità.  ", punti: { vip: 10, bot: 0, ritardati: 0 } },
             { testo: "B) Dopo aver fatto il pellegrinaggio esco di sera a prendere un gelato, ma rientro presto.", punti: { vip: 4, bot: 5, ritardati: 1 } },
             { testo: "C) Dopo il pellegrinaggio vado subito a pregare, cenare e poi a letto. ", punti: { vip: 0, bot: 10, ritardati: 0 } },
-            { testo: "D) Esco e fino a tardi bevendo e gossippando", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "D) Esco e fino a tardi bevendo e gossippando.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     }
@@ -420,10 +420,17 @@ function mostraDomandaSulloSchermo() {
 function calcolaRisultato(){
     let vip = punteggioTotale.vip;
     let bot = punteggioTotale.bot;
-    let ritardati = punteggioTotale.ritardati
-    vip= Math.round((vip*100)/220)
-    bot= Math.round((bot*100)/220)
-    ritardati= Math.round((ritardati*100)/220)
+    let ritardati = punteggioTotale.ritardati;
+    if (sessoScelto === "M"){
+        vip= Math.round((vip*100)/220);
+        bot= Math.round((bot*100)/220);
+        ritardati= Math.round((ritardati*100)/220);
+    }else{
+        vip= Math.round((vip*100)/150);
+        bot= Math.round((bot*100)/150);
+        ritardati= Math.round((ritardati*100)/150);
+    }
+        
     const vincitore = Math.max(vip, bot, ritardati)
     
 
