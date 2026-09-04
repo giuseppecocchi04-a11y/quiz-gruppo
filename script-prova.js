@@ -334,6 +334,14 @@ const listaDomandeF = [
             { testo: "D) Esco e fino a tardi bevendo e gossippando.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
+    },
+    {
+        domanda: "16. Dove ti vedi 4 anni dopo la fine delle superiori?",
+        risposte: [
+            { testo: "A) A perseguire la mia vocazione, in convento o all'altare.", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "B) A festeggiare la mia laurea.", punti: { vip: 10, bot: 0, ritardati: 0 } },
+            { testo: "C) A lavorare al posto del mio uomo.", punti: { vip: 0, bot: 0 , ritardati: 10 } }
+        ]
     }
     
 ];
@@ -427,8 +435,8 @@ function calcolaRisultato(){
         bot= Math.round((bot*100)/220);
         ritardati= Math.round((ritardati*100)/220);
     }else{
-        vip= Math.round((vip*100)/150);
-        bot= Math.round((bot*100)/150);
+        vip= Math.round((vip*100)/160);
+        bot= Math.round((bot*100)/160);
         ritardati= Math.round((ritardati*100)/150);
     }
         
