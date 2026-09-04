@@ -319,9 +319,9 @@ const listaDomandeF = [
     {
         domanda: "14. Un ragazzo ci prova con te: ",
         risposte: [
-            { testo: "A) Gli dico di no, non ha le idee chiare. ", punti: { vip: 0, bot: 10, ritardati: 0 } },
+            { testo: "A) Gli dico di no, non usa il messalino. ", punti: { vip: 0, bot: 10, ritardati: 0 } },
             { testo: "B) Gli dico di no, non è abbastanza.", punti: { vip: 10, bot: 0, ritardati: 0 } },
-            { testo: "C) Gli dico di no, è troppo ligio.", punti: { vip: 0, bot: 0, ritardati: 10 } }
+            { testo: "C) Gli dico di no, non è fissato con la palestra.", punti: { vip: 0, bot: 0, ritardati: 10 } }
         ]
 
     },
